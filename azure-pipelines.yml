@@ -116,7 +116,7 @@ stages:
         zipAfterPublish: true
     - task: AzureFunctionApp@1
       displayName: 'Azure Function Deploy: leaderboard'
-        inputs:
+      inputs:
           azureSubscription: 'Resource Manager - Tailspin - Space Game'
           appType: functionAppLinux
           appName: '$(LeaderboardAppName)'
